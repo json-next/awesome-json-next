@@ -1,5 +1,5 @@
 
-JSON5 • HJSON • SON • CSON
+JSON5 • HJSON • HanSON • SON • CSON
 
 
 
@@ -36,6 +36,7 @@ More:
 
 [JSON5](#json5) •
 [HJSON](#hjson) •
+[HanSON](#hanson) •
 [SON](#son) •
 [CSON](#cson)
 
@@ -137,6 +138,27 @@ github: [hjson](https://github.com/hjson)
     '''
 }
 ```
+
+
+### HanSON 
+
+_JSON for Humans_
+
+github: [timjansen/hanson](https://github.com/timjansen/hanson)
+
+Adds:
+
+- HanSON is JSON with comments, multi-line strings and unquoted property names.
+- Comments use JavaScript syntax (`//`, `/**/`).
+- Supports backticks as quotes (\`\`) for multi-line strings.
+- You can use either double-quotes (`""`) or single-quotes (`''`) for single-line strings.
+- Property names do not require quotes if they are valid JavaScript identifiers.
+- Commas after the last list element or property will be ignored.
+- Every JSON string is valid HanSON.
+- HanSON can easily be converted to real JSON.
+
+
+
 
 ### SON
 
