@@ -1,4 +1,6 @@
 
+JSON5 • HJSON • SON • CSON
+
 
 
 # Awesome JSON - What's Next? 
@@ -11,18 +13,30 @@ A Collection of What's Next for Awesome JSON (JavaScript Object Notation) for ri
 
 ## What's Missing in JSON?
 
-- \#1 Comments, Comments, Comments
-- \#2 Unquoted Keys
-- \#3 Multi-Line Strings
-- \#4 Trailing Commas in Arrays and Objects
+1. Comments, Comments, Comments
+2. Unquoted Keys
+3. Multi-Line Strings 
+   - a) Folded -- Folds Newlines 
+   - b) Unfolded
+4. Trailing Commas in Arrays and Objects
+
+
 
 More:
 
 - Date/DateTime/Timestamp Type
 - Optional Commas 
+- "Raw" String (e.g. `''` instead of `""`) 
+  - No need to escape `\` or `"` etc. To escape `'` use `'''` e.g. `''''Henry's Themes'''`
+
 
 
 ## What's Next?
+
+[JSON5](#JSON5) •
+[HJSON](#HJSON) •
+[SON](#SON) •
+[CSON](#CSON)
 
 
 ### JSON5 
@@ -151,11 +165,25 @@ Adds:
 ```
 
 
+### CSON
+
+_CoffeeScript-Object-Notation. Same as JSON but for CoffeeScript objects_
+
+github: [bevry/cson](https://github.com/bevry/cson)
+
+
+
+
+
 
 
 ## JSON Formats for Line-Oriented Tables / Records - JSON is the New CSV
 
 _One Line, One Data Record_
+
+[JSON Lines](#JSON-Lines) •
+[NDJSON ](#NDJSON) 
+
 
 ### JSON Lines
 
