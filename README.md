@@ -1,5 +1,5 @@
 
-JSON5 • HJSON • HanSON • SON • CSON
+JSON5 • HJSON • HanSON • SON • CSON • USON
 
 
 
@@ -38,7 +38,8 @@ More:
 [HJSON](#hjson) •
 [HanSON](#hanson) •
 [SON](#son) •
-[CSON](#cson)
+[CSON](#cson) •
+[USON](#uson)
 
 
 ### JSON5 
@@ -158,6 +159,25 @@ Adds:
 - HanSON can easily be converted to real JSON.
 
 
+```js
+{
+  listName: "Sesame Street Monsters", // note that listName needs no quotes
+  content: [
+    {
+      name: "Cookie Monster",
+      /* Note the template quotes and unescaped regular quotes in the next string */
+      background: `Cookie Monster used to be a
+monster that ate everything, especially cookies.
+These days he is forced to eat "healthy" food.`
+    }, {
+      // You can single-quote strings too:
+      name: 'Herry Monster',
+      background: `Herry Monster is a furry blue monster with a purple nose.
+He's mostly retired today.`
+    },    // don't worry, the trailing comma will be ignored
+   ]
+}
+```
 
 
 ### SON
@@ -197,6 +217,62 @@ github: [bevry/cson](https://github.com/bevry/cson)
 
 
 
+### USON
+
+_μson - A compact human-readable data serialization format specially designed for shell_
+
+github: [burningtree/uson](https://github.com/burningtree/uson)
+
+Principles:
+
+- Superset of JSON (every JSON is valid μson).
+- Whitespace is not significant.
+- String quoting `"` is optional.
+- In Array or Object, comma `,` can be replaced by whitespace ` `.
+- Assignation with colon `:` can be repeated to create nested objects.
+- You can use own types, casting is done by `!` character.
+
+```
+number:12.05 text:Banana quotedText:"John Devilseed" empty:null good:true
+```
+
+same as:
+
+```json
+{
+  "number": 12.05,
+  "text": "Banana",
+  "quotedText": "John Devilseed",
+  "empty": null,
+  "good": true
+}
+```
+
+```
+simple:[1 2 3] texts:[Malta Budapest "New York"] objects:[{id:1}]
+```
+
+same as:
+
+```json
+{
+  "simple": [
+    1,
+    2,
+    3
+  ],
+  "texts": [
+    "Malta",
+    "Budapest",
+    "New York"
+  ],
+  "objects": [
+    {
+      "id": 1
+    }
+  ]
+}
+```
 
 
 
