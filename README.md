@@ -25,7 +25,8 @@ A Collection of What's Next for Awesome JSON (JavaScript Object Notation) for ri
 More:
 
 - Date/DateTime/Timestamp Type
-- Optional Commas 
+- Optional Commas
+- Optional Unquoted String Values
 - "Raw" String (e.g. `''` instead of `""`) 
   - No need to escape `\` or `"` etc. To escape `'` use `'''` e.g. `''''Henry's Themes'''`
 
@@ -33,10 +34,10 @@ More:
 
 ## What's Next?
 
-[JSON5](#JSON5) •
-[HJSON](#HJSON) •
-[SON](#SON) •
-[CSON](#CSON)
+[JSON5](#json5) •
+[HJSON](#hjson) •
+[SON](#son) •
+[CSON](#cson)
 
 
 ### JSON5 
@@ -177,12 +178,12 @@ github: [bevry/cson](https://github.com/bevry/cson)
 
 
 
-## JSON Formats for Line-Oriented Tables / Records - JSON is the New CSV
+## JSON is the New CSV - JSON Formats for Line-Oriented Tables / Records 
 
 _One Line, One Data Record_
 
-[JSON Lines](#JSON-Lines) •
-[NDJSON ](#NDJSON) 
+[JSON Lines](#json-lines) •
+[NDJSON ](#ndjson) 
 
 
 ### JSON Lines
@@ -232,6 +233,16 @@ github: [ndjson](https://github.com/ndjson)
 ```
 
 (Source: [specs.okfnlabs.org/ndjson](http://specs.okfnlabs.org/ndjson))
+
+
+
+
+## More
+
+See [Format Extensions](https://github.com/burningtree/awesome-json#format-extensions), 
+[Supersets](https://github.com/burningtree/awesome-json#supersets) and
+[Related Formats](https://github.com/burningtree/awesome-json#related-formats)
+in [Awesome JSON (@burningtree)](https://github.com/burningtree/awesome-json) 
 
 
 
