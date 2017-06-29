@@ -1,5 +1,7 @@
 
-JSON5 • HJSON • HanSON • SON • CSON • USON
+JSON5 • HJSON • HanSON • SON • CSON • USON •
+JSON Lines • NDJSON •
+HOCON • HCL • UCL
 
 
 
@@ -401,7 +403,31 @@ github: [ndjson](https://github.com/ndjson)
 
 
 
-## More
+## More Formats
+
+### HOCON
+
+_Human-Optimized Config Object Notation_
+
+github: [typesafehub/config/HOCON](https://github.com/typesafehub/config/blob/master/HOCON.md)
+
+### HCL 
+
+_HashiCorp Configuration Language_
+
+github: [hashicorp/hcl](https://github.com/hashicorp/hcl)
+
+
+### UCL
+
+_Universal Configuration Language_
+
+github: [vstakhov/libucl](https://github.com/vstakhov/libucl)
+
+
+
+
+### And More
 
 See [Format Extensions](https://github.com/burningtree/awesome-json#format-extensions), 
 [Supersets](https://github.com/burningtree/awesome-json#supersets) and
