@@ -31,6 +31,7 @@ More:
 - Optional Unquoted String Values
 - "Raw" String (e.g. `''` instead of `""`) 
   - No need to escape `\` or `"` etc. To escape `'` use `'''` e.g. `''''Henry's Themes'''`
+- More Data Types (`set`, `map`, `symbol`, etc.)
 - And much more
 
 
