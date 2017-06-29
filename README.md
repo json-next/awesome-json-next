@@ -403,7 +403,7 @@ github: [ndjson](https://github.com/ndjson)
 
 
 
-## More Formats
+## More Formats : {} []
 
 ### HOCON
 
@@ -424,6 +424,12 @@ _Universal Configuration Language_
 
 github: [vstakhov/libucl](https://github.com/vstakhov/libucl)
 
+
+### AXON
+
+_AXON is eXtended Object Notation_ 
+
+web: [intellimath.bitbucket.io/axon](https://intellimath.bitbucket.io/axon/)
 
 
 
