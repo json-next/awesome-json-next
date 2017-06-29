@@ -31,7 +31,7 @@ More:
 - Optional Unquoted String Values
 - "Raw" String (e.g. `''` instead of `""`) 
   - No need to escape `\` or `"` etc. To escape `'` use `'''` e.g. `''''Henry's Themes'''`
-
+- And much more
 
 
 ## What's Next?
@@ -403,7 +403,9 @@ github: [ndjson](https://github.com/ndjson)
 
 
 
-## More Formats : {} []
+## More Formats 
+
+_: = {} []_
 
 ### HOCON
 
