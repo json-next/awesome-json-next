@@ -16,15 +16,11 @@ A Collection of What's Next for Awesome JSON (JavaScript Object Notation) for ri
 ## What's Missing in JSON?
 
 1. Comments, Comments, Comments
-1. `Set`
-1. `Map`
-1. `Symbol`
-1. Unquoted Keys
-1. Multi-Line Strings 
+2. Unquoted Keys
+3. Multi-Line Strings 
    - a) Folded -- Folds Newlines 
    - b) Unfolded
-1. Trailing Commas in Arrays and Objects
-
+4. Trailing Commas in Arrays and Objects
 
 
 More:
@@ -36,6 +32,7 @@ More:
   - No need to escape `\` or `"` etc. To escape `'` use `'''` e.g. `''''Henry's Themes'''`
 - More Data Types (`set`, `map`, `symbol`, etc.)
 - And much more
+
 
 
 ## What's Next?
