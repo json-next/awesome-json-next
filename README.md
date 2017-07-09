@@ -240,7 +240,7 @@ Example:
 
 ```
 {
-  #  use shell-like (or ruby-like) comments
+  #  use shell-like comments
 
   listName: "Sesame Street Monsters"   # note: comments after key-value pairs are optional  
   content: [
