@@ -7,7 +7,7 @@ HOCON • HCL • UCL
 
 # Awesome JSON - What's Next? 
 
-A Collection of What's Next for Awesome JSON (JavaScript Object Notation) for rich structured (meta) data in (plain) text
+A Collection of What's Next for Awesome JSON (JavaScript Object Notation) for structured (meta) data in text.
 
 
 #### _Contributions welcome. Anything missing? Send in a pull request. Thanks._
