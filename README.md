@@ -216,7 +216,7 @@ Adds:
 
 _JSON with Extensions (JSONX) or JSON v1.1 (a.k.a. JSON11 or JSON XI or JSON II) - JSON Evolved for Humans - Easy-to-Write, Easy-to-Read_
 
-github: [datatxt/jsonx](https://github.com/datatxt/jsonx)
+github: [jsonii](https://github.com/jsonii)
 
 JSON v1.1 includes all JSON extensions from HanSON (JSON for Humans):
 
