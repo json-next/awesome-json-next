@@ -453,7 +453,6 @@ github: [ndjson](https://github.com/ndjson)
 
 
 
-
 ## More Formats 
 
 _: = {} []_
@@ -493,6 +492,37 @@ See [Format Extensions](https://github.com/burningtree/awesome-json#format-exten
 [Related Formats](https://github.com/burningtree/awesome-json#related-formats)
 in [Awesome JSON (@burningtree)](https://github.com/burningtree/awesome-json) 
 
+
+### Discussion
+
+_Fixing JSON - Comments, Please!_
+
+> We can easily agree on what’s wrong with JSON, and I can't help wondering if it'd be worth fixing it.
+>
+> -- Tim Bray ([Fixing JSON](https://www.tbray.org/ongoing/When/201x/2016/08/20/Fixing-JSON))
+
+<!-- break -->
+
+> XML already does everything JSON does! And there's no way to differentiate between nodes and attributes! 
+> And there are no namespaces! And no schemas! What's the point of JSON?
+>
+> -- Anonymous
+
+<!-- break -->
+
+> We need to fix engineers that try to 'fix JSON', absolutely nothing is broken with JSON.
+>
+> -- Anonymous
+
+<!-- break -->
+
+
+- [Fixing JSON](https://www.tbray.org/ongoing/When/201x/2016/08/20/Fixing-JSON) by Tim Bray, Aug 2016
+  - Major Irritant: Commas • Irritant: Timespamps • Major irritant: Schemas
+- [https://www.tbray.org/ongoing/When/201x/2016/08/22/Fixing-JSON-Redux](https://www.tbray.org/ongoing/When/201x/2016/08/22/Fixing-JSON-Redux) by Tim Bray, Aug 2016
+  - Just use X • Comments, please please comments! • You shouldn't want to hand-edit JSON • 
+    You'll lose JavaScript compatibility! • Unquoted field names, please! • Is it too late?
+- [Fixing JSON Comments @ Hacker News](https://news.ycombinator.com/item?id=12327668), Aug 2016
 
 
 
