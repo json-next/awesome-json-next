@@ -59,7 +59,7 @@ _Fixing JSON - Comments, Please!_
 
 
 - [Fixing JSON](https://www.tbray.org/ongoing/When/201x/2016/08/20/Fixing-JSON) by Tim Bray, Aug 2016
-  - Major Irritant: Commas • Irritant: Timespamps • Major irritant: Schemas
+  - Major Irritant: Commas • Irritant: Timestamps • Major irritant: Schemas
 - [The Fixing-JSON Conversation](https://www.tbray.org/ongoing/When/201x/2016/08/22/Fixing-JSON-Redux) by Tim Bray, Aug 2016
   - Just use X • Comments, please please comments! • You shouldn't want to hand-edit JSON • 
     You'll lose JavaScript compatibility! • Unquoted field names, please! • Is it too late?
