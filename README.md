@@ -452,35 +452,21 @@ TJSON supports the following data types:
 
 Examples:
 
+``` json
+{
+  "array-example:A<O>": [
+    {
+      "string-example:s": "Hello, world!",
+      "binary-data-example:d": "QklOQVJZ",
+      "float-example:f": 0.42,
+      "int-example:i": "42",
+      "timestamp-example:t": "2020-11-06T22:27:34Z",
+      "boolean-example:b": true
+    }
+  ],
+  "set-example:S<i>": [1, 2, 3]
+}
 ```
-{"example:s":"Hello, world!"}
-
-{"example:f":0.42}
-{"example-positive:i":"42","example-negative:i":"-42"}
-{"example:u":"42"}
-
-{"example:b":true}
-
-{"example:d16":"48656c6c6f2c20776f726c6421"}
-{"example:d32":"jbswy3dpfqqho33snrscc"}
-{"example:d64":"SGVsbG8sIHdvcmxkIQ"}
-{"example:d":"SGVsbG8sIHdvcmxkIQ"}
-
-{"example:t":"2016-10-02T07:31:51Z"}
-
-{"example:A<i>": ["1", "2", "3"]}
-{"example:A<A<i>>:" [["1", "2"], ["3", "4"], ["5", "6"]]}
-{"example:A<>": []}
-{"example:A<i>": []}
-
-{"example:A<O>": [{"a:i": "1"}, {"b:i": "2"}]}
-
-{"example:S<i>: ["1", "2", "3"]}
-{"example:S<A<i>>": [["1", "2"], ["3", "4"]]}
-{"example:S<>": []}
-{"example:S<i>": []}
-```
-
 
 
 ## JSON is the New CSV - JSON Formats for Line-Oriented Tables / Records 
