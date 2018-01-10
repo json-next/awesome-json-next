@@ -1,5 +1,5 @@
 
-JSON5 • HJSON • HanSON • SON • CSON • USON • JSONX • JSON11 • JSON XI • JSONII •
+JSON5 • HJSON • HanSON • SON • TJSON • CSON • USON • JSONX • JSON11 • JSON XI • JSONII •
 JSON Lines • NDJSON •
 HOCON • HCL • UCL
 
@@ -425,6 +425,13 @@ same as:
 }
 ```
 
+## JSON with (Rich) Types
+
+### TJSON
+
+_Tagged JSON with Rich Type Annotations_
+
+(web: [tjson.org](https://www.tjson.org), github: [tjson](https://github.com/tjson))
 
 
 ## JSON is the New CSV - JSON Formats for Line-Oriented Tables / Records 
