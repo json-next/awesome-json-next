@@ -431,7 +431,56 @@ same as:
 
 _Tagged JSON with Rich Type Annotations_
 
-(web: [tjson.org](https://www.tjson.org), github: [tjson](https://github.com/tjson))
+web: [tjson.org](https://www.tjson.org), github: [tjson](https://github.com/tjson)
+
+a tagging scheme/microformat for enriching the types that stored in self-describing, schema-free JSON documents -
+
+Why?  Enables "content-aware hashing" where different encodings of the same data (including both TJSON and binary formats like Protocol Buffers, MessagePack, BSON, etc) share the same content hash and therefore the same cryptographic signature. 
+
+TJSON supports the following data types:
+
+- Objects (O): Name/value dictionaries. The names of objects in TJSON carry a postfix "tag" which acts as a type annotation for the associated value. 
+- Arrays (A): Lists of values: identical to JSON, but typed by their containing objects. Unlike JSON, arrays cannot be used as a top-level expression: only objects are allowed.
+- Sets (S): Lists of unique values: similar to an array, but repeated elements are disallowed.
+- Strings (s): TJSON strings are Unicode and always serialized as UTF-8. When used as the name of a member of an object, they carry a mandatory "tag" which functions as a self-describing type annotation which provides a type signature for the associated value.
+- Binary Data (d, d16, d32, d64): First-class support for 8-bit clean binary data, encoded in a variety of formats including hexadecimal (a.k.a. base16), base32, and base64url.
+- Numbers:
+  - Integers (i,u): TJSON supports the full ranges of both signed and unsigned 64-bit integers by serializing them as strings.
+  - Floating points (f): Floating point numbers in TJSON are identical to JSON, but can always be disambiguated from integers.
+- Timestamps (t): TJSON has a first-class type for representing date/time timestamp values, serialized as a subset of RFC 3339 (an ISO 8601-alike).
+- Boolean Values (b): TJSON supports the true and false values from JSON (null is expressly disallowed).
+
+Examples:
+
+```
+{"example:s":"Hello, world!"}
+
+{"example:f":0.42}
+{"example-positive:i":"42","example-negative:i":"-42"}
+{"example:u":"42"}
+
+{"example:b":true}
+
+{"example:d16":"48656c6c6f2c20776f726c6421"}
+{"example:d32":"jbswy3dpfqqho33snrscc"}
+{"example:d64":"SGVsbG8sIHdvcmxkIQ"}
+{"example:d":"SGVsbG8sIHdvcmxkIQ"}
+
+{"example:t":"2016-10-02T07:31:51Z"}
+
+{"example:A<i>": ["1", "2", "3"]}
+{"example:A<A<i>>:" [["1", "2"], ["3", "4"], ["5", "6"]]}
+{"example:A<>": []}
+{"example:A<i>": []}
+
+{"example:A<O>": [{"a:i": "1"}, {"b:i": "2"}]}
+
+{"example:S<i>: ["1", "2", "3"]}
+{"example:S<A<i>>": [["1", "2"], ["3", "4"]]}
+{"example:S<>": []}
+{"example:S<i>": []}
+```
+
 
 
 ## JSON is the New CSV - JSON Formats for Line-Oriented Tables / Records 
