@@ -433,7 +433,7 @@ _Tagged JSON with Rich Type Annotations_
 
 web: [tjson.org](https://www.tjson.org), github: [tjson](https://github.com/tjson)
 
-a tagging scheme/microformat for enriching the types that stored in self-describing, schema-free JSON documents -
+A tagging scheme/microformat for enriching the types stored in self-describing, schema-free JSON documents.
 
 Why?  Enables "content-aware hashing" where different encodings of the same data (including both TJSON and binary formats like Protocol Buffers, MessagePack, BSON, etc) share the same content hash and therefore the same cryptographic signature. 
 
