@@ -292,8 +292,36 @@ He's mostly retired today.`
 }
 ```
 
+### CSON (I)
 
-### CSON
+_Cursive Script Object Notation (CSON). A strict superset of JavaScript Object Notation (JSON) that can be written by hand (hence the name) and translated to a canonical JSON_
+
+github: [lifthrasiir/cson](https://github.com/lifthrasiir/cson) - designed by Kang Seonghoon
+
+CSON:
+
+```
+# CSON data example
+hello =
+  |world
+  |  ...and goodbye
+the = ['answer', 'is'
+       42]
+```
+
+same as:
+
+``` javascript
+{
+  "hello": "world\n  ...and goodbye",
+  "the": ["answer", "is",  
+          42]
+}
+```
+
+
+
+### CSON (II)
 
 _CoffeeScript-Object-Notation. Same as JSON but for CoffeeScript objects_
 
