@@ -31,7 +31,8 @@ JSON cons:
 
 
 
-## More
+## Parsing JSON is a Minefield 💣 (by Nicolas Seriot)
 
-Add notes / find note about the article "JSON Parsing is hard" or similar. 
-Lists all the gotchas for parsers for edge cases for numbers, character encodings, etc.
+<http://seriot.ch/parsing_json.php>
+
+
