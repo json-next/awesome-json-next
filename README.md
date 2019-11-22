@@ -602,6 +602,13 @@ See [Format Extensions](https://github.com/burningtree/awesome-json#format-exten
 in [Awesome JSON (@burningtree)](https://github.com/burningtree/awesome-json) 
 
 
+
+## Articles
+
+- [JSON: The Fat-Free Alternative to XML](http://www.json.org/xml) by Douglas Crockford  
+- [Parsing JSON is a Minefield](http://seriot.ch/parsing_json.php) by Nicolas Seriot
+
+
 ## Meta
 
 **License**
