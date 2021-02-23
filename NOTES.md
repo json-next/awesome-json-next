@@ -81,10 +81,13 @@ Add Python and JavaScript style comments in your JSON files.
 
 - <http://rapidjson.org/md_doc_dom.html>
 
-- kParseCommentsFlag -	Allow one-line `//` ... and multi-line `/*` ... `*/` comments (relaxed JSON syntax).
-- kParseTrailingCommasFlag	- Allow trailing commas at the end of objects and arrays (relaxed JSON syntax).
-- kParseNanAndInfFlag	- Allow parsing NaN, Inf, Infinity, -Inf and -Infinity as double values (relaxed JSON syntax).
-- kParseEscapedApostropheFlag	- Allow escaped apostrophe `&rsquo;` in strings (relaxed JSON syntax).
+
+Relaxed JSON syntax:
+
+- kParseCommentsFlag -	Allow one-line `//` ... and multi-line `/*` ... `*/` comments.
+- kParseTrailingCommasFlag	- Allow trailing commas at the end of objects and arrays.
+- kParseNanAndInfFlag	- Allow parsing NaN, Inf, Infinity, -Inf and -Infinity as double values.
+- kParseEscapedApostropheFlag	- Allow escaped apostrophe `&rsquo;` in strings.
 
 
 ### Python JSON Built-In Extensions
