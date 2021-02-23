@@ -144,6 +144,21 @@ list: [
 ]
 ```
 
+### SEN (Simple Encoding Notation) 
+
+SEN (Simple Encoding Notation) is a simple minimal encoding notation. Drawing from JSON but less strict. A SEN parse must be able to parse JSON but should also ignore commas and should allow tokens to be read as strings.
+
+- <https://github.com/ohler55/ojg/blob/develop/sen.md>
+
+```
+{
+  one: 1
+  two: 2
+  array: [a b c]
+  yes: true
+}
+```
+
 
 ## More Notes
 
