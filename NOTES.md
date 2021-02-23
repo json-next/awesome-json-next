@@ -2,7 +2,23 @@
 
 ## Stage for Future Updates - What's News?
 
+Rather than keep making new variants of JSON, it'd be nice if somebody could convince some mainstream language maintainers 
+to just update their built-in JSON parser to add optional features like skipping over comments and not caring about trailing commas. Most parsers support various flags already to configure things, 
+so there could just be an
+- ALLOW_COMMENTS flag and 
+- ALLOW_TRAILING_COMMAS flag.
+
+
+
+### More flavors to check / add
+- Rome JSON (RJSON), see Rome JavaScript tool
+
 ### JSON with Commas and Comments (JWCC) 
+
+> JWCC is a minimal extension to the widely used JSON file format with (1) optional commas after the final element of arrays 
+> and objects and (2) C/C++ style comments. These two features make it more suitable for human-editable configuration files, 
+> without adding so many features that it’s incompatible with numerous other (deliberate and accidental) existing JSON extensions.
+
 - JSON with Commas and Comments @ <https://nigeltao.github.io/blog/2021/json-with-commas-comments.html>
   - Hacker News Discusion @ <https://news.ycombinator.com/item?id=26224255>, Feb 2021
 
@@ -38,8 +54,55 @@ When in the JSON with Comments mode, you can use single line (`//`) as well as b
 as used in JavaScript. 
 
 
+### Comment JSON   (Python commentjson module)
+
+Add Python and JavaScript style comments in your JSON files.
+
+```
+{
+    "name": "Vaidik Kapoor", # Person's name
+    "location": "Delhi, India", // Person's location
+
+    # Section contains info about
+    // person's appearance
+    "appearance": {
+        "hair_color": "black",
+        "eyes_color": "black",
+        "height": "6"
+    }
+}
+```
+
+- <https://pypi.org/project/commentjson/>
+- <https://commentjson.readthedocs.io/en/latest/>
 
 
+### Rapid JSON - Added relaxed JSON syntax (comment, trailing comma, NaN/Infinity)
+
+- <http://rapidjson.org/md_doc_dom.html>
+
+- kParseCommentsFlag -	Allow one-line `//` ... and multi-line `/*` ... `*/` comments (relaxed JSON syntax).
+- kParseTrailingCommasFlag	- Allow trailing commas at the end of objects and arrays (relaxed JSON syntax).
+- kParseNanAndInfFlag	- Allow parsing NaN, Inf, Infinity, -Inf and -Infinity as double values (relaxed JSON syntax).
+- kParseEscapedApostropheFlag	- Allow escaped apostrophe `&rsquo;` in strings (relaxed JSON syntax).
+
+
+### Python JSON Built-In Extensions
+
+It also understands NaN, Infinity, and -Infinity as their corresponding float values, 
+which is outside the JSON spec.
+
+> This module does not comply with the RFC in a strict fashion, 
+> implementing some extensions that are valid JavaScript but not valid JSON. In particular:
+>
+> Infinite and NaN number values are accepted and output;
+>
+> Repeated names within an object are accepted, and only the value of the last name-value pair is used.
+>
+> Since the RFC permits RFC-compliant parsers to accept input texts 
+> that are not RFC-compliant, this module’s deserializer is technically RFC-compliant under default settings.
+
+Source: <https://docs.python.org/3/library/json.html#module-json>
 
 
 ## More Notes
