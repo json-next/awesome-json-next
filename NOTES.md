@@ -23,6 +23,14 @@ so there could just be an
   - Hacker News Discusion @ <https://news.ycombinator.com/item?id=26224255>, Feb 2021
 
 ### JSONC - A Json like file format with comments
+
+Jsonc is a simplified json format which allows comments and unquoted values delimited by whitespace. 
+A jsonc formatted file can be transformed to a json file. Comments will be stripped out and quotes added.
+
+Any valid json is also a valid jsonc - but this goes only in one direction.
+
+Why? Json formatted files could be very handy to be used as config files. But the lack of comments and the redundancy of the format hurts readability. 
+
 - <https://komkom.github.io/>
 
 ```
