@@ -116,6 +116,35 @@ which is outside the JSON spec.
 Source: <https://docs.python.org/3/library/json.html#module-json>
 
 
+### CUE (Configure Unify Execute) - JSON Superset
+
+- <https://cuelang.org/docs/tutorials/tour/intro/json/>
+
+CUE (Configure Unify Execute) is a superset of JSON. It adds the following conveniences:
+
+- C-style comments,
+- quotes may be omitted from field names without special characters,
+- commas at the end of fields are optional,
+- comma after last element in list is allowed,
+- outer curly braces are optional.
+
+JSON objects are called structs in CUE. An object member is called a field.
+
+```
+one: 1
+two: 2
+
+// A field using quotes.
+"two-and-a-half": 2.5
+
+list: [
+	1,
+	2,
+	3,
+]
+```
+
+
 ## More Notes
 
 ### Bits On the Wire (by Tim Bray)
