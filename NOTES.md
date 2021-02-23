@@ -1,5 +1,12 @@
 # Notes
 
+## Stage for Future Updates - What's News?
+
+- JSON with Commas and Comments @ <https://nigeltao.github.io/blog/2021/json-with-commas-comments.html>
+  - Hacker News Discusion @ <https://news.ycombinator.com/item?id=26224255>, Feb 2021
+
+
+
 ## Bits On the Wire (by Tim Bray)
 
 <https://www.tbray.org/ongoing/When/201x/2019/11/17/Bits-On-the-Wire>
