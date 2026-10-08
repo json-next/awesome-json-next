@@ -136,6 +136,8 @@ JSON for "Humans" (not Machines). Adds:
 }
 ```
 
+Online tool: [BestJSON JSON Viewer](https://bestjson.com/json-viewer) - Explore JSON5 as a searchable tree locally in the browser, without signup or input upload.
+
 ### HJSON
 
 _A "Human" User Interface for JSON_
